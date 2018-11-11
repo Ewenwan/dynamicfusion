@@ -2,6 +2,9 @@ DynamicFusion
 ============
 Implementation of [Newcombe et al. 2015 DynamicFusion paper](http://grail.cs.washington.edu/projects/dynamicfusion/papers/DynamicFusion.pdf).
 
+	实时重建 非刚性变形 动态场景 的系统。并且随着新的数据融合进模型当中，模型得到降噪、细节更加精细。
+
+
 #### This project is still in active development and does not yet reproduce the results of the paper accurately.
 
 The code is based on this [KinectFusion implemenation](https://github.com/Nerei/kinfu_remake)
