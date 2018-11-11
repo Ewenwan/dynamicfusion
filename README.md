@@ -3,7 +3,16 @@ DynamicFusion
 Implementation of [Newcombe et al. 2015 DynamicFusion paper](http://grail.cs.washington.edu/projects/dynamicfusion/papers/DynamicFusion.pdf).
 
 	实时重建 非刚性变形 动态场景 的系统。并且随着新的数据融合进模型当中，模型得到降噪、细节更加精细。
+# DynamicFusion核心问题及思路
 
+        传统的SLAM系统，要么将场景限定为静态场景；要么只能离线进行动态场景的重建。
+	
+	DynamicFusion系统的核心是：
+	       建立一个关键帧（canonical frame）下的模型，
+	           之后场景发生的变化都可以通过几何变换对应到这个模型上；
+	       每一次新读取了深度图都通过几何变换之后再融合到模型当中，
+	           这里变换的过程相当于取消了场景的变换；
+	       就这样场景逐渐的变得真实丰满。
 
 #### This project is still in active development and does not yet reproduce the results of the paper accurately.
 
